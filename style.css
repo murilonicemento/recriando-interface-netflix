@@ -1,0 +1,103 @@
+:root{
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/*é utilizada para alterar a propriedade padrão da box model */
+}
+/*Elementos Básicos*/
+body{
+    background-color: var(--preto);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+header .container{
+    font-weight: bolder;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header nav a:hover{
+    color: #fff; 
+}
+/*filme principal*/
+.filme_principal{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    background-image: url(img/stranger-things-2.0.jpeg), linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50));
+    height: 485px;
+    background-size:cover; /*Ajusta a imagem à tela*/
+    display: flex;/*coloca os elementos no padrão em linha*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; 
+}
+
+.filme_principal .sinopse{
+    margin-bottom: 50px;
+    margin-top: 5px;
+    text-align: justify;
+}
+
+.titulo{
+    font-size: 53px;
+    margin-top: 15%;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    margin-right: 15px;
+    margin-left: 25px;
+    font-size: 12px;
+    cursor: pointer;/*Muda o cursor do mouse*/
+    transition: .3s ease all;/*Cuida da parte da transição de uma animação e outra*/
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+i{
+    margin: 15px;
+}
+
+.container{
+    margin-left: 25px;
+}
+
+.filme_principal .container{
+    width: 60%;
+}
+
+.box_filme{
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 3px;
+}
+
+.carrosel_filmes{
+    margin-top: 3px;
+}
